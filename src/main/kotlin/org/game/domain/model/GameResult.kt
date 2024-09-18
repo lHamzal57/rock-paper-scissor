@@ -1,7 +1,7 @@
 package org.game.org.game.domain.model
 
 data class GameResult(
-    val PlayerAWins: Int,
-    val PlayerBWins: Int,
-    val Draws: Int
+    val playerAWins: Int,
+    val playerBWins: Int,
+    val draws: Int
 )
