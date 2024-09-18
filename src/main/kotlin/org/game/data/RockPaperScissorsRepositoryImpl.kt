@@ -12,8 +12,8 @@ class RockPaperScissorsRepositoryImpl:RockPaperScissorsRepository {
         var draws = 0
 
         for (i in 1..numberOfGames){
-            var playerAMove = GameMove.entries.toList().shuffled()
-            var playerBMove = GameMove.ROCK // the second NPC always plays ROCK
+            val playerAMove = GameMove.entries.toList().shuffled()
+            val playerBMove = GameMove.ROCK // the second NPC always plays ROCK
 
             when {
                 playerAMove[0].name == playerBMove.name -> draws++ // Player A Move is ROCK
