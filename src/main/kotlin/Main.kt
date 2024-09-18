@@ -12,7 +12,7 @@ fun main() {
 
     val rounds = 20
 
-    val player1 = Player("Rena")
+    val player1 = Player("Rena") // First player Move is Always ROCK
     val player2 = Player("Big")
 
     val result = gameService.runGame(listOf(player1,player2),rounds)

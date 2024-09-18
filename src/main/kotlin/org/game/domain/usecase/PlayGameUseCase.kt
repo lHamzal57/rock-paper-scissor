@@ -18,7 +18,14 @@ class PlayGameUseCase {
         var draws = 0
 
         for (i in 1..numberOfGames){
-            val playerMoves = players.associateWith { GameMove.entries.toList().shuffled().first() }
+            val playerMoves = players.associateWith { player ->
+                if (player == players.first()){
+                    GameMove.ROCK
+                }else{
+                    GameMove.entries.toList().shuffled().first()
+                }
+
+            }
 
             val winningMove =determineWinningMove(playerMoves.values)
             if (winningMove == null){
