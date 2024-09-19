@@ -10,7 +10,7 @@ fun main() {
 
     val gameService = GameService(rockPaperScissorsGame)
 
-    val rounds = 20
+    val rounds = 100
 
     val player1 = Player("Rena") // First player Move is Always ROCK
     val player2 = Player("Big")
